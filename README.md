@@ -8,10 +8,15 @@ One-liner installer for [Telemt](https://github.com/telemt/telemt) — a fast Ru
 curl -fsSL https://raw.githubusercontent.com/le0nus/mtproxy-setup/master/install.sh | sudo bash
 ```
 
-The script will interactively ask for:
+Or install with all defaults (no questions asked):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/le0nus/mtproxy-setup/master/install.sh | sudo bash -s -- --quick
+```
+
+The interactive installer will ask for:
 - **Port** (default: `443`)
 - **TLS masking domain** (default: `api.vk.com`) — makes traffic look like regular HTTPS to this site
-- **Metrics** — optional Prometheus endpoint on port 9090
 
 After installation, you'll get a ready-to-use `tg://proxy?...` link.
 
